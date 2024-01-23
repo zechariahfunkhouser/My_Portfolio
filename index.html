@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zechariah Funkhouser's Portfolio</title>
     <style>
+        /* Global Styles */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -13,23 +14,34 @@
             background-color: #f8f8f8;
             color: #333;
             transition: background-color 0.5s ease;
+            line-height: 1.6;
         }
 
         header {
-            background-color: #aed581;
+            background-color: #4CAF50;
             text-align: center;
             padding: 2em 0;
+            position: relative;
         }
 
-        h1 {
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: top;
+            margin-bottom: 1em;
+        }
+
+        header h1 {
             margin: 0;
             font-size: 2.5em;
-            color: #333;
+            color: #fff;
         }
 
-        p {
+        header p {
             font-size: 1.2em;
-            color: #555;
+            color: #ddd;
         }
 
         section {
@@ -43,21 +55,21 @@
         }
 
         h2 {
-            color: #aed581;
-            border-bottom: 2px solid #aed581;
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
             padding-bottom: 0.5em;
             font-size: 1.8em;
         }
 
         h3 {
-            color: #ff8a65;
+            color: #FF9800;
             font-size: 1.5em;
             cursor: pointer;
             transition: color 0.3s ease;
         }
 
         h3:hover {
-            color: #ff7043; /* Change color on hover */
+            color: #FF5722; /* Change color on hover */
         }
 
         .project-details {
@@ -78,13 +90,13 @@
         }
 
         a {
-            color: #aed581;
+            color: #4CAF50;
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         a:hover {
-            color: #9ccc65;
+            color: #45A049;
         }
     </style>
 
@@ -107,6 +119,7 @@
 <body>
 
     <header>
+        <img src="path/to/your/image.jpg" alt="Your Name">
         <h1>Zechariah Funkhouser</h1>
         <p>Python Web Developer</p>
     </header>
@@ -120,13 +133,13 @@
         <h2>Projects</h2>
         <h3 onclick="toggleProjectDetails('sample-app')">Sample App</h3>
         <div id="details-sample-app" class="project-details">
-            <p>The pinnacle of my Ruby on Rails mastery, the Sample App serves as a testament to my coding prowess.</p>
-            <p>Explore the code on <a href="https://github.com/zechariahfunkhouser/sample_app" target="_blank">GitHub</a>.</p>
+            <p>Delve into my Ruby on Rails masterpiece, the Sample App, showcasing advanced coding techniques.</p>
+            <p>Experience the code on <a href="https://github.com/zechariahfunkhouser/sample_app" target="_blank">GitHub</a>.</p>
         </div>
 
         <h3 onclick="toggleProjectDetails('toy-app')">Toy App</h3>
         <div id="details-toy-app" class="project-details">
-            <p>Embark on a journey through my coding playground with the Toy App, a delightful demonstration of my Ruby on Rails skills.</p>
+            <p>Embark on an enchanting journey through my coding wonderland with the Toy App, a whimsical demonstration of my Ruby on Rails skills.</p>
             <p>Discover the code on <a href="https://github.com/zechariahfunkhouser/toy_app" target="_blank">GitHub</a>.</p>
         </div>
     </section>
@@ -138,6 +151,8 @@
             <li>CSS3</li>
             <li>JavaScript</li>
             <li>Responsive Design</li>
+            <li>Advanced Web Development</li>
+            <li>UI/UX Design</li>
         </ul>
     </section>
 
@@ -147,11 +162,9 @@
     </section>
 
     <script>
-        // Optional: You can add more JavaScript functionality here
-        // For example, you can add interactivity to your projects section or other dynamic features.
+        // Your advanced JavaScript functionalities go here
     </script>
 
 </body>
 
 </html>
-
